@@ -126,7 +126,6 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
         leftHipYawLink:
           Alpha: 1
           Show Axes: false
@@ -307,7 +306,6 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
         rightHipYawLink:
           Alpha: 1
           Show Axes: false
@@ -446,11 +444,25 @@ Visualization Manager:
       Update Interval: 0
       Value: true
       Visual Enabled: true
+    - Class: rviz/TF
+      Enabled: false
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        {}
+      Update Interval: 0
+      Value: false
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
     Default Light: true
-    Fixed Frame: world
+    Fixed Frame: pelvis
     Frame Rate: 30
   Name: root
   Tools:
@@ -471,25 +483,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 5.82548523
+      Distance: 3.49351645
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.067580387
-        Y: 0.0880836472
-        Z: 0.311477512
+        X: 0.019661162
+        Y: 0.0639539063
+        Z: -0.177990317
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.440398395
+      Pitch: 0.20539856
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 6.20858335
+      Yaw: 0.270399719
     Saved: ~
 Window Geometry:
   Displays:

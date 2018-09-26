@@ -6,6 +6,7 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
+        - /RobotModel1
       Splitter Ratio: 0.5
     Tree Height: 895
   - Class: rviz/Selection
@@ -16,7 +17,7 @@ Panels:
       - /2D Nav Goal1
       - /Publish Point1
     Name: Tool Properties
-    Splitter Ratio: 0.588679
+    Splitter Ratio: 0.588679016
   - Class: rviz/Views
     Expanded:
       - /Current View1
@@ -36,7 +37,7 @@ Visualization Manager:
       Color: 160; 160; 164
       Enabled: true
       Line Style:
-        Line Width: 0.03
+        Line Width: 0.0299999993
         Value: Lines
       Name: Grid
       Normal Cell Count: 0
@@ -58,6 +59,33 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
+        center_bottom_led_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        center_top_led_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        head:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        head_hokuyo_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        head_imu_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        hokuyo_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         leftAnklePitchLink:
           Alpha: 1
           Show Axes: false
@@ -99,7 +127,6 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
         leftHipYawLink:
           Alpha: 1
           Show Axes: false
@@ -204,15 +231,23 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        left_camera_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        left_camera_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        left_led_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         lowerNeckPitchLink:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        multisense_root_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
         neckYawLink:
           Alpha: 1
           Show Axes: false
@@ -272,7 +307,6 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
         rightHipYawLink:
           Alpha: 1
           Show Axes: false
@@ -373,6 +407,18 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        right_camera_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        right_camera_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        right_led_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         torso:
           Alpha: 1
           Show Axes: false
@@ -394,8 +440,8 @@ Visualization Manager:
           Show Trail: false
           Value: true
       Name: RobotModel
-      Robot Description: robot_description
-      TF Prefix: ""
+      Robot Description: val_viz_robot_description
+      TF Prefix: val_viz
       Update Interval: 0
       Value: true
       Visual Enabled: true
@@ -404,143 +450,173 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
-        leftAnklePitchLink:
-          Value: true
-        leftCOP_Frame:
-          Value: true
-        leftElbowPitchLink:
-          Value: true
-        leftFoot:
-          Value: true
-        leftFootSixAxis_Frame:
-          Value: true
-        leftForearmLink:
-          Value: true
-        leftHazardCamera_Frame:
-          Value: true
-        leftHipPitchLink:
-          Value: true
-        leftHipRollLink:
-          Value: true
-        leftHipYawLink:
-          Value: true
-        leftIndexFingerPitch1Link:
-          Value: true
-        leftIndexFingerPitch2Link:
-          Value: true
-        leftIndexFingerPitch3Link:
-          Value: true
-        leftKneePitchLink:
-          Value: true
-        leftMiddleFingerPitch1Link:
-          Value: true
-        leftMiddleFingerPitch2Link:
-          Value: true
-        leftMiddleFingerPitch3Link:
-          Value: true
-        leftPalm:
-          Value: true
-        leftPinkyPitch1Link:
-          Value: true
-        leftPinkyPitch2Link:
-          Value: true
-        leftPinkyPitch3Link:
-          Value: true
-        leftShoulderPitchLink:
-          Value: true
-        leftShoulderRollLink:
-          Value: true
-        leftShoulderYawLink:
-          Value: true
-        leftThumbPitch1Link:
-          Value: true
-        leftThumbPitch2Link:
-          Value: true
-        leftThumbPitch3Link:
-          Value: true
-        leftThumbRollLink:
-          Value: true
-        leftTorsoImu_Frame:
-          Value: true
-        leftWristRollLink:
-          Value: true
-        lowerNeckPitchLink:
-          Value: true
-        multisense_root_link:
-          Value: true
-        neckYawLink:
+        multisense/head:
           Value: true
         pelvis:
           Value: true
-        pelvisMiddleImu_Frame:
-          Value: true
-        pelvisRearImu_Frame:
-          Value: true
-        rightAnklePitchLink:
-          Value: true
-        rightCOP_Frame:
-          Value: true
-        rightElbowPitchLink:
-          Value: true
-        rightFoot:
-          Value: true
-        rightFootSixAxis_Frame:
-          Value: true
-        rightForearmLink:
-          Value: true
-        rightHazardCamera_Frame:
-          Value: true
-        rightHipPitchLink:
-          Value: true
-        rightHipRollLink:
-          Value: true
-        rightHipYawLink:
-          Value: true
-        rightIndexFingerPitch1Link:
-          Value: true
-        rightIndexFingerPitch2Link:
-          Value: true
-        rightIndexFingerPitch3Link:
-          Value: true
-        rightKneePitchLink:
-          Value: true
-        rightMiddleFingerPitch1Link:
-          Value: true
-        rightMiddleFingerPitch2Link:
-          Value: true
-        rightMiddleFingerPitch3Link:
-          Value: true
-        rightPalm:
-          Value: true
-        rightPinkyPitch1Link:
-          Value: true
-        rightPinkyPitch2Link:
-          Value: true
-        rightPinkyPitch3Link:
-          Value: true
-        rightShoulderPitchLink:
-          Value: true
-        rightShoulderRollLink:
-          Value: true
-        rightShoulderYawLink:
-          Value: true
-        rightThumbPitch1Link:
-          Value: true
-        rightThumbPitch2Link:
-          Value: true
-        rightThumbPitch3Link:
-          Value: true
-        rightThumbRollLink:
-          Value: true
-        rightWristRollLink:
-          Value: true
-        torso:
-          Value: true
-        torsoPitchLink:
-          Value: true
-        torsoYawLink:
-          Value: true
         upperNeckPitchLink:
+          Value: true
+        val_viz/center_bottom_led_frame:
+          Value: true
+        val_viz/center_top_led_frame:
+          Value: true
+        val_viz/head:
+          Value: true
+        val_viz/head_hokuyo_frame:
+          Value: true
+        val_viz/head_imu_link:
+          Value: true
+        val_viz/hokuyo_link:
+          Value: true
+        val_viz/leftAnklePitchLink:
+          Value: true
+        val_viz/leftCOP_Frame:
+          Value: true
+        val_viz/leftElbowPitchLink:
+          Value: true
+        val_viz/leftFoot:
+          Value: true
+        val_viz/leftFootSixAxis_Frame:
+          Value: true
+        val_viz/leftForearmLink:
+          Value: true
+        val_viz/leftHazardCamera_Frame:
+          Value: true
+        val_viz/leftHipPitchLink:
+          Value: true
+        val_viz/leftHipRollLink:
+          Value: true
+        val_viz/leftHipYawLink:
+          Value: true
+        val_viz/leftIndexFingerPitch1Link:
+          Value: true
+        val_viz/leftIndexFingerPitch2Link:
+          Value: true
+        val_viz/leftIndexFingerPitch3Link:
+          Value: true
+        val_viz/leftKneePitchLink:
+          Value: true
+        val_viz/leftMiddleFingerPitch1Link:
+          Value: true
+        val_viz/leftMiddleFingerPitch2Link:
+          Value: true
+        val_viz/leftMiddleFingerPitch3Link:
+          Value: true
+        val_viz/leftPalm:
+          Value: true
+        val_viz/leftPinkyPitch1Link:
+          Value: true
+        val_viz/leftPinkyPitch2Link:
+          Value: true
+        val_viz/leftPinkyPitch3Link:
+          Value: true
+        val_viz/leftShoulderPitchLink:
+          Value: true
+        val_viz/leftShoulderRollLink:
+          Value: true
+        val_viz/leftShoulderYawLink:
+          Value: true
+        val_viz/leftThumbPitch1Link:
+          Value: true
+        val_viz/leftThumbPitch2Link:
+          Value: true
+        val_viz/leftThumbPitch3Link:
+          Value: true
+        val_viz/leftThumbRollLink:
+          Value: true
+        val_viz/leftTorsoImu_Frame:
+          Value: true
+        val_viz/leftWristRollLink:
+          Value: true
+        val_viz/left_camera_frame:
+          Value: true
+        val_viz/left_camera_optical_frame:
+          Value: true
+        val_viz/left_led_frame:
+          Value: true
+        val_viz/lowerNeckPitchLink:
+          Value: true
+        val_viz/neckYawLink:
+          Value: true
+        val_viz/pelvis:
+          Value: true
+        val_viz/pelvisMiddleImu_Frame:
+          Value: true
+        val_viz/pelvisRearImu_Frame:
+          Value: true
+        val_viz/rightAnklePitchLink:
+          Value: true
+        val_viz/rightCOP_Frame:
+          Value: true
+        val_viz/rightElbowPitchLink:
+          Value: true
+        val_viz/rightFoot:
+          Value: true
+        val_viz/rightFootSixAxis_Frame:
+          Value: true
+        val_viz/rightForearmLink:
+          Value: true
+        val_viz/rightHazardCamera_Frame:
+          Value: true
+        val_viz/rightHipPitchLink:
+          Value: true
+        val_viz/rightHipRollLink:
+          Value: true
+        val_viz/rightHipYawLink:
+          Value: true
+        val_viz/rightIndexFingerPitch1Link:
+          Value: true
+        val_viz/rightIndexFingerPitch2Link:
+          Value: true
+        val_viz/rightIndexFingerPitch3Link:
+          Value: true
+        val_viz/rightKneePitchLink:
+          Value: true
+        val_viz/rightMiddleFingerPitch1Link:
+          Value: true
+        val_viz/rightMiddleFingerPitch2Link:
+          Value: true
+        val_viz/rightMiddleFingerPitch3Link:
+          Value: true
+        val_viz/rightPalm:
+          Value: true
+        val_viz/rightPinkyPitch1Link:
+          Value: true
+        val_viz/rightPinkyPitch2Link:
+          Value: true
+        val_viz/rightPinkyPitch3Link:
+          Value: true
+        val_viz/rightShoulderPitchLink:
+          Value: true
+        val_viz/rightShoulderRollLink:
+          Value: true
+        val_viz/rightShoulderYawLink:
+          Value: true
+        val_viz/rightThumbPitch1Link:
+          Value: true
+        val_viz/rightThumbPitch2Link:
+          Value: true
+        val_viz/rightThumbPitch3Link:
+          Value: true
+        val_viz/rightThumbRollLink:
+          Value: true
+        val_viz/rightWristRollLink:
+          Value: true
+        val_viz/right_camera_frame:
+          Value: true
+        val_viz/right_camera_optical_frame:
+          Value: true
+        val_viz/right_led_frame:
+          Value: true
+        val_viz/torso:
+          Value: true
+        val_viz/torsoPitchLink:
+          Value: true
+        val_viz/torsoYawLink:
+          Value: true
+        val_viz/upperNeckPitchLink:
+          Value: true
+        world:
           Value: true
       Marker Scale: 1
       Name: TF
@@ -548,99 +624,118 @@ Visualization Manager:
       Show Axes: true
       Show Names: true
       Tree:
-        pelvis:
-          leftHipYawLink:
-            leftHipRollLink:
-              leftHipPitchLink:
-                leftKneePitchLink:
-                  leftAnklePitchLink:
-                    leftFoot:
-                      leftCOP_Frame:
+        val_viz/pelvis:
+          val_viz/leftHipYawLink:
+            val_viz/leftHipRollLink:
+              val_viz/leftHipPitchLink:
+                val_viz/leftKneePitchLink:
+                  val_viz/leftAnklePitchLink:
+                    val_viz/leftFoot:
+                      val_viz/leftCOP_Frame:
                         {}
-                      leftFootSixAxis_Frame:
+                      val_viz/leftFootSixAxis_Frame:
                         {}
-          pelvisMiddleImu_Frame:
+          val_viz/pelvisMiddleImu_Frame:
             {}
-          pelvisRearImu_Frame:
+          val_viz/pelvisRearImu_Frame:
             {}
-          rightHipYawLink:
-            rightHipRollLink:
-              rightHipPitchLink:
-                rightKneePitchLink:
-                  rightAnklePitchLink:
-                    rightFoot:
-                      rightCOP_Frame:
+          val_viz/rightHipYawLink:
+            val_viz/rightHipRollLink:
+              val_viz/rightHipPitchLink:
+                val_viz/rightKneePitchLink:
+                  val_viz/rightAnklePitchLink:
+                    val_viz/rightFoot:
+                      val_viz/rightCOP_Frame:
                         {}
-                      rightFootSixAxis_Frame:
+                      val_viz/rightFootSixAxis_Frame:
                         {}
-          torsoYawLink:
-            torsoPitchLink:
-              torso:
-                leftHazardCamera_Frame:
+          val_viz/torsoYawLink:
+            val_viz/torsoPitchLink:
+              val_viz/torso:
+                val_viz/leftHazardCamera_Frame:
                   {}
-                leftShoulderPitchLink:
-                  leftShoulderRollLink:
-                    leftShoulderYawLink:
-                      leftElbowPitchLink:
-                        leftForearmLink:
-                          leftWristRollLink:
-                            leftPalm:
-                              leftIndexFingerPitch1Link:
-                                leftIndexFingerPitch2Link:
-                                  leftIndexFingerPitch3Link:
+                val_viz/leftShoulderPitchLink:
+                  val_viz/leftShoulderRollLink:
+                    val_viz/leftShoulderYawLink:
+                      val_viz/leftElbowPitchLink:
+                        val_viz/leftForearmLink:
+                          val_viz/leftWristRollLink:
+                            val_viz/leftPalm:
+                              val_viz/leftIndexFingerPitch1Link:
+                                val_viz/leftIndexFingerPitch2Link:
+                                  val_viz/leftIndexFingerPitch3Link:
                                     {}
-                              leftMiddleFingerPitch1Link:
-                                leftMiddleFingerPitch2Link:
-                                  leftMiddleFingerPitch3Link:
+                              val_viz/leftMiddleFingerPitch1Link:
+                                val_viz/leftMiddleFingerPitch2Link:
+                                  val_viz/leftMiddleFingerPitch3Link:
                                     {}
-                              leftPinkyPitch1Link:
-                                leftPinkyPitch2Link:
-                                  leftPinkyPitch3Link:
+                              val_viz/leftPinkyPitch1Link:
+                                val_viz/leftPinkyPitch2Link:
+                                  val_viz/leftPinkyPitch3Link:
                                     {}
-                              leftThumbRollLink:
-                                leftThumbPitch1Link:
-                                  leftThumbPitch2Link:
-                                    leftThumbPitch3Link:
+                              val_viz/leftThumbRollLink:
+                                val_viz/leftThumbPitch1Link:
+                                  val_viz/leftThumbPitch2Link:
+                                    val_viz/leftThumbPitch3Link:
                                       {}
-                leftTorsoImu_Frame:
+                val_viz/leftTorsoImu_Frame:
                   {}
-                lowerNeckPitchLink:
-                  neckYawLink:
-                    upperNeckPitchLink:
-                      multisense_root_link:
-                        {}
-                rightHazardCamera_Frame:
+                val_viz/lowerNeckPitchLink:
+                  val_viz/neckYawLink:
+                    val_viz/upperNeckPitchLink:
+                      val_viz/head:
+                        val_viz/center_bottom_led_frame:
+                          {}
+                        val_viz/center_top_led_frame:
+                          {}
+                        val_viz/head_imu_link:
+                          {}
+                        val_viz/hokuyo_link:
+                          val_viz/head_hokuyo_frame:
+                            {}
+                        val_viz/left_camera_frame:
+                          val_viz/left_camera_optical_frame:
+                            {}
+                        val_viz/left_led_frame:
+                          {}
+                        val_viz/right_camera_frame:
+                          val_viz/right_camera_optical_frame:
+                            {}
+                        val_viz/right_led_frame:
+                          {}
+                val_viz/rightHazardCamera_Frame:
                   {}
-                rightShoulderPitchLink:
-                  rightShoulderRollLink:
-                    rightShoulderYawLink:
-                      rightElbowPitchLink:
-                        rightForearmLink:
-                          rightWristRollLink:
-                            rightPalm:
-                              rightIndexFingerPitch1Link:
-                                rightIndexFingerPitch2Link:
-                                  rightIndexFingerPitch3Link:
+                val_viz/rightShoulderPitchLink:
+                  val_viz/rightShoulderRollLink:
+                    val_viz/rightShoulderYawLink:
+                      val_viz/rightElbowPitchLink:
+                        val_viz/rightForearmLink:
+                          val_viz/rightWristRollLink:
+                            val_viz/rightPalm:
+                              val_viz/rightIndexFingerPitch1Link:
+                                val_viz/rightIndexFingerPitch2Link:
+                                  val_viz/rightIndexFingerPitch3Link:
                                     {}
-                              rightMiddleFingerPitch1Link:
-                                rightMiddleFingerPitch2Link:
-                                  rightMiddleFingerPitch3Link:
+                              val_viz/rightMiddleFingerPitch1Link:
+                                val_viz/rightMiddleFingerPitch2Link:
+                                  val_viz/rightMiddleFingerPitch3Link:
                                     {}
-                              rightPinkyPitch1Link:
-                                rightPinkyPitch2Link:
-                                  rightPinkyPitch3Link:
+                              val_viz/rightPinkyPitch1Link:
+                                val_viz/rightPinkyPitch2Link:
+                                  val_viz/rightPinkyPitch3Link:
                                     {}
-                              rightThumbRollLink:
-                                rightThumbPitch1Link:
-                                  rightThumbPitch2Link:
-                                    rightThumbPitch3Link:
+                              val_viz/rightThumbRollLink:
+                                val_viz/rightThumbPitch1Link:
+                                  val_viz/rightThumbPitch2Link:
+                                    val_viz/rightThumbPitch3Link:
                                       {}
       Update Interval: 0
       Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: torso
+    Default Light: true
+    Fixed Frame: val_viz/pelvis
     Frame Rate: 30
   Name: root
   Tools:
@@ -661,9 +756,9 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 3.9699
+      Distance: 3.96989989
       Enable Stereo Rendering:
-        Stereo Eye Separation: 0.06
+        Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
@@ -671,12 +766,15 @@ Visualization Manager:
         X: 0
         Y: 0
         Z: 0
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.0500000007
+      Invert Z Axis: false
       Name: Current View
-      Near Clip Distance: 0.01
+      Near Clip Distance: 0.00999999978
       Pitch: 0.245398
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 6.27858
+      Yaw: 6.27858019
     Saved: ~
 Window Geometry:
   Displays:
@@ -684,7 +782,7 @@ Window Geometry:
   Height: 1176
   Hide Left Dock: false
   Hide Right Dock: false
-  QMainWindow State: 000000ff00000000fd00000004000000000000016a0000040efc0200000008fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000006400fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c00610079007301000000280000040e000000dd00fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000010f0000040efc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a0056006900650077007301000000280000040e000000b000fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000073f0000003efc0100000002fb0000000800540069006d006501000000000000073f000002f600fffffffb0000000800540069006d00650100000000000004500000000000000000000004ba0000040e00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd00000004000000000000016a0000040efc0200000008fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000006100fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c00610079007301000000280000040e000000d700fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000010f0000040efc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a0056006900650077007301000000280000040e000000ad00fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000073f0000003efc0100000002fb0000000800540069006d006501000000000000073f0000030000fffffffb0000000800540069006d00650100000000000004500000000000000000000004ba0000040e00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Selection:
     collapsed: false
   Time:
@@ -694,5 +792,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1855
-  X: 65
-  Y: 24
+  X: 177
+  Y: 68
