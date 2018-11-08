@@ -8,7 +8,7 @@
 
     <!-- Load Joint State and Robot State Publishers -->
     <node name="val_viz_joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" > 
-        <rosparam param="source_list">[/ihmc_ros/valkyrie/output/joint_states]</rosparam>
+        <rosparam param="source_list">[/ihmc_ros/valkyrie/output/joint_states, multisense/joint_states]</rosparam>
         <remap from="robot_description" to="val_viz_robot_description" />
         <remap from="joint_states" to="val_viz_joint_states" /> 
     </node>
